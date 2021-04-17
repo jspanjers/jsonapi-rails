@@ -9,7 +9,9 @@ env:
   matrix:
     - "RAILS_VERSION=5.0.7.1"
     - "RAILS_VERSION=5.1.6.1"
-    - "RAILS_VERSION=5.2.2"
+    - "RAILS_VERSION=5.2.5"
+    - "RAILS_VERSION=6.0.3.6"
+    - "RAILS_VERSION=6.1.3.1"
     - "RAILS_VERSION=main"
 rvm:
   - 2.6.7
