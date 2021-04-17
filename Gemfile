@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 rails_version = ENV['RAILS_VERSION'] || "default"
 rails =
   case rails_version
-  when 'master'
-    { github: 'rails/rails' }
+  when 'main'
+    { github: 'rails/rails', branch: 'main' }
   when 'default'
     '>= 5.0'
   else
