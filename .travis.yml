@@ -10,7 +10,7 @@ env:
     - "RAILS_VERSION=5.0.7.1"
     - "RAILS_VERSION=5.1.6.1"
     - "RAILS_VERSION=5.2.2"
-    - "RAILS_VERSION=master"
+    - "RAILS_VERSION=main"
 rvm:
   - 2.2.9
   - 2.3.8
@@ -19,7 +19,7 @@ rvm:
 matrix:
   allow_failures:
     - rvm: ruby-head
-    - env: "RAILS_VERSION=master"
+    - env: "RAILS_VERSION=main"
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
