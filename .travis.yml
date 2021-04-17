@@ -7,8 +7,6 @@ env:
     - CC_TEST_REPORTER_ID=98c9b3070ea9ac0e8f7afb6570f181506c3a06372b1db5c7deb8e46089fdf132
     - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
   matrix:
-    - "RAILS_VERSION=5.0.7.1"
-    - "RAILS_VERSION=5.1.6.1"
     - "RAILS_VERSION=5.2.5"
     - "RAILS_VERSION=6.0.3.6"
     - "RAILS_VERSION=6.1.3.1"
